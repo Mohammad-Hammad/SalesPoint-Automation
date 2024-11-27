@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" verbose="1">
+    <listeners>
+        <listener class-name="org.example.ScreenshotListener" />
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    </listeners>
+    <test name="Web">
+        <classes>
+            <class name="com.company.project.tests.ActivationsTests"></class>
+            <class name="com.company.project.tests.ActivationTestsWeb"></class>
+          </classes>
+      </test>
+  </suite>
